@@ -1,4 +1,4 @@
-# [Pathological criteria based deeplearning for rare and difficult cases](https://www.nature.com/articles/s42256-019-0052-1), nature machine intelligence
+# [Pathological criteria based deeplearning for rare and difficult cases](), nature machine intelligence
 
 The overall pipeline has multiple steps and involves large-size whole slide image processing. Using the code requires users to have basic knowledge about python programming, Tensorflow, and training deep neural networks in order to understand the whole training and evaluation procedures.
 
