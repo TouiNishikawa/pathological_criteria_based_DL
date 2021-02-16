@@ -1,12 +1,12 @@
 # [Pathological criteria based deeplearning for rare and difficult cases](), 
 
-The overall pipeline has multiple steps and involves large-size whole slide image processing. Using the code requires users to have basic knowledge about python programming, Tensorflow, and training deep neural networks in order to understand the whole training and evaluation procedures.
+Google colab is used for coding. However it doesn't run on the runtime provided by google because it needs larger RAM. Please connect to local runtime. In each progtram, you must write the path where you get clone this repository. If this condition is prepared, the all thing you do is pareparing the datasets and click "run all cells".   
 
 ## 1. Data preparation
 ### Chrop pathches
 - Datasets can be got from [this download link]() . 
 
-- Download whole slide data to ```data/vs/```. Download annotation data to ```data/csv```.
+- Download whole slide data to ```data/vs/```. Download cvs data to ```data/csv```.
 
 - ```anno_parser/``` provides tools to read patches from whole slide images based on annotations for the following segmentation and classification task. Refer the `README` in `anno_parser` to obtain more details. Users need to sample 1024x1024 patches and then resize them to 256x256 (as described in the paper). The number of generated images are shown in Fig.2e of the paper (we use the Keras ImageGenerator, so we need to follow the loader requirement to organize the data. See the loader in the corresponding folders to understand the details). Users can sample around the same number of images and organize the data into two types of hierarchies for segmentation and classification.
 
