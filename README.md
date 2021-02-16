@@ -3,9 +3,35 @@
 We run programs on the enviroment; keras 2.43, tensorflow 2.30.   
 
 ## 1. Data preparation
-### Chrop pathches
+### Set the datas
 - Datasets can be got from [this download link]() . 
+- Please git clone this repository and set the downloaded file like this
+     
+    - annotation_data/  <--------------- set the csv files
+    - vs/  <---------------set the WSI files
+    - model/  <---------------set the model(h5) files
+    - data/
+        - pre_train/
+            - train_1/
+                - testing
+                - validation
+                - testing
+            - train_2/
+            - train_3/
+            - train_4/
+            - train_5/
+            - train_6/
+        - main_train/
+            - training/
+            - validation/
+            - testing/
+    - code/
+        - crop_patches/
+        - pre_train/
+        - main_train/
 
+
+### Chrop pathches
 - Download whole slide data to ```data/vs/```. Download cvs data to ```data/csv```.
 
 - ```anno_parser/``` provides tools to read patches from whole slide images based on annotations for the following segmentation and classification task. Refer the `README` in `anno_parser` to obtain more details. Users need to sample 1024x1024 patches and then resize them to 256x256 (as described in the paper). The number of generated images are shown in Fig.2e of the paper (we use the Keras ImageGenerator, so we need to follow the loader requirement to organize the data. See the loader in the corresponding folders to understand the details). Users can sample around the same number of images and organize the data into two types of hierarchies for segmentation and classification.
