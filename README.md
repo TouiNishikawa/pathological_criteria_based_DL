@@ -1,6 +1,6 @@
 # [Pathological criteria based deeplearning for rare and difficult cases](), 
 
-Google colab is used for coding. However it doesn't run on the runtime provided by google because it needs larger RAM. Please connect to local runtime. In each progtram, you must write the path where you get clone this repository. If this condition is prepared, the all thing you do is pareparing the datasets and click "run all cells".   
+We run programs on the enviroment; keras 2.43, tensorflow 2.30.   
 
 ## 1. Data preparation
 ### Chrop pathches
