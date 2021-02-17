@@ -1,11 +1,13 @@
 # [Pathological criteria based deeplearning for rare and difficult cases](), 
 
-We run programs on the enviroment; keras 2.43, tensorflow 2.30.   
+
+enviroment; keras 2.43, tensorflow 2.30. 
+
 
 ## 1. Data preparation
 ### Set the datas
-- Datasets can be got from [this download link]() . 
-- Please git clone this repository and set the downloaded file like this
+- Please git clone this repository and set the dataset like this.
+  (Dataset　is abailable from the corresponding author on reasonable request.)
      
     - annotation/  <--------------- set the csv files
     - code/
