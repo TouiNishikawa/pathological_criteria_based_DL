@@ -3,7 +3,7 @@
 - Please git clone this repository and set the dataset like this.
   (Dataset is abailable from the corresponding author on reasonable request.)
 
-    - data/
+    - dataset/
         - pre_train/    <--------------- set the pre-training dataset
             - train_1/
                 - training
