@@ -4,7 +4,7 @@
 enviroment; keras 2.43, tensorflow 2.30. 
 
 ## 1. Data preparation
-### Set the datas
+### Set the dataset
 - Please git clone this repository and set the dataset like this.
   (Dataset is abailable from the corresponding author on reasonable request.)
      
