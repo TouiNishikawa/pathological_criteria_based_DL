@@ -2,8 +2,7 @@
 ### Set the dataset
 - Please git clone this repository and set the dataset like this.
   (Dataset is abailable from the corresponding author on reasonable request.)
-     
-    - annotation/    <--------------- (set the csv files)
+
     - data/
         - pre_train/    <--------------- set the pre-training dataset
             - train_1/
@@ -24,5 +23,3 @@
                 - CIS (label 4)
             - validation/
             - testing/
-    - model/    <---------------（set the model(h5) files）
-    - vs/    <---------------(set the WSI files)
