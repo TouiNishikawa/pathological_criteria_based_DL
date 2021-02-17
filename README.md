@@ -45,7 +45,7 @@ Case of CNN1 training
     ```
     device=0 sh test.sh
     ```
-### choose the best model
+### Choose the best model
 - Set the downloaded model(h5) files  into ```model/```
 - If you use the model you train, set the model(h5) files into ```model/``` (The file must be named like this -- > ```model/cnn1.h5```)
 
