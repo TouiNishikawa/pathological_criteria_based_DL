@@ -7,28 +7,29 @@ We run programs on the enviroment; keras 2.43, tensorflow 2.30.
 - Datasets can be got from [this download link]() . 
 - Please git clone this repository and set the downloaded file like this
      
-    - annotation_data/  <--------------- set the csv files
-    - vs/  <---------------set the WSI files
-    - model/  <---------------set the model(h5) files
-    - data/
+    - annotation/  <--------------- set the csv files
+    - code/
+        - crop_patches/
         - pre_train/
+        - main_train/
+    - data/
+        - pre_train/　　<--------------- set the pre-training dataset
             - train_1/
-                - testing
+                - training
+                    - Ligh
+                    - Low
                 - validation
-                - testing
             - train_2/
             - train_3/
             - train_4/
             - train_5/
             - train_6/
-        - main_train/
+        - main_train/  <--------------- set the main training dataset
             - training/
             - validation/
             - testing/
-    - code/
-        - crop_patches/
-        - pre_train/
-        - main_train/
+    - model/  <---------------（set the model(h5) files）
+    - vs/  <---------------set the WSI files
 
 
 ### Chrop pathches
