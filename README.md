@@ -13,8 +13,8 @@ enviroment; keras 2.43, tensorflow 2.30.
         - pre_train/    <--------------- set the pre-training dataset
             - train_1/
                 - training
-                    - Ligh (label 1)
-                    - Low (lavel 2)
+                    - Low (label 1)
+                    - High (lavel 2)
                 - validation
             - train_2/
             - train_3/
@@ -34,20 +34,20 @@ enviroment; keras 2.43, tensorflow 2.30.
 
 ## 2. Pre-train
 ### training
-In pre-training, 6 CNN models are trained. 
+In pre-training, six CNN models are trained. 
 
 Case of CNN1 training
 - Train the model using training and validation dataset
     ```
     device=0 sh train.sh
     ```
-- Evaluate the model using validation dataset
+- Evaluate the six model using validation dataset
     ```
     device=0 sh test.sh
     ```
 ### choose the best model
 - Set the downloaded model(h5) files  into ```model/```
-- If you use the model you train, set the model(h5) files  into ```model/```
+- If you use the model you train, set the model(h5) files into ```model/``` (The file name is like this -- > ```model/cnn1.h5```)
 
 
 ## 3.Main training
