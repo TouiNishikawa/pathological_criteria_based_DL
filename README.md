@@ -47,7 +47,7 @@ Case of CNN1 training
     ```
 ### choose the best model
 - Set the downloaded model(h5) files  into ```model/```
-- If you use the model you train, set the model(h5) files into ```model/``` (The file name is like this -- > ```model/cnn1.h5```)
+- If you use the model you train, set the model(h5) files into ```model/``` (The file must be named like this -- > ```model/cnn1.h5```)
 
 
 ## 3.Main training
