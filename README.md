@@ -10,16 +10,12 @@ enviroment; keras 2.43, tensorflow 2.30.
   (Dataset　is abailable from the corresponding author on reasonable request.)
      
     - annotation/  <--------------- set the csv files
-    - code/
-        - crop_patches/
-        - pre_train/
-        - main_train/
     - data/
         - pre_train/　　<--------------- set the pre-training dataset
             - train_1/
                 - training
-                    - Ligh
-                    - Low
+                    - Ligh (label 1)
+                    - Low (lavel 2)
                 - validation
             - train_2/
             - train_3/
@@ -34,33 +30,11 @@ enviroment; keras 2.43, tensorflow 2.30.
     - vs/  <---------------set the WSI files
 
 
-### Chrop pathches
-- Download whole slide data to ```data/vs/```. Download cvs data to ```data/csv```.
-
-- ```anno_parser/``` provides tools to read patches from whole slide images based on annotations for the following segmentation and classification task. Refer the `README` in `anno_parser` to obtain more details. Users need to sample 1024x1024 patches and then resize them to 256x256 (as described in the paper). The number of generated images are shown in Fig.2e of the paper (we use the Keras ImageGenerator, so we need to follow the loader requirement to organize the data. See the loader in the corresponding folders to understand the details). Users can sample around the same number of images and organize the data into two types of hierarchies for segmentation and classification.
-
-- Save training images to ```data/segmentation``` and organize data like the following for segmentation. The `image` and `groundTruth` contain subdirectories `{1/2/3}`, which store each category's images and annotation masks, respectively. Class 1 is low grade, class 2 is high grade, and class 3 is merged normal and insufficient information (see paper and anno_parser/ folder for more details).
-    - train/
-        - image/
-            - 1/
-            - 2/
-            - 3/
-        - groundTruth/
-            - 1/
-            - 2/
-            - 3/
-    - test/
-        - image/
-            - 1/
-            - 2/
-            - 3/
-        - groundTruth/
-            - 1/
-            - 2/
-            - 3/
-- Building a data folder alias ```data/classification``` pointing to ```data/segmentation```
+## Chrop pathches
+- crop_patches.ipynb
+- Please change the first code and run all cells.
     ```
-    ln -s data/segmentation data/classification
+    cd [THE PATH TO THE DIRRECTORY .ipynb FILE EXISTS]
     ```
 
 - Organize whole slide data to ```data/wsi```, split the slides files under `data/Slide/Img` into `data/wsi/{train/test}_slides` folders based on `json` files under `data/Slide/`.
