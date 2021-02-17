@@ -22,7 +22,7 @@ enviroment; keras 2.43, tensorflow 2.30.
             - train_5/
             - train_6/
         - main_train/  <--------------- set the main training dataset
-            - train_1/
+            - training/
                 - Normal (label 1)
                 - Atypical (label 2)
                 - Dysplasia (label 3)
