@@ -9,7 +9,7 @@ enviroment; keras 2.43, tensorflow 2.30.
   (Dataset is abailable from the corresponding author on reasonable request.)
      
     - annotation/    <--------------- (set the csv files)
-    - data/
+    - dataset/
         - pre_train/    <--------------- set the pre-training dataset
             - train_1/
                 - training
