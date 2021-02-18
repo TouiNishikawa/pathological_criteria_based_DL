@@ -75,7 +75,18 @@ CNN1 training
     device=0 sh test.sh
     ```
 
-## 4. Crop pathches (If you want to crop patches from WSIs in stead of using our datasets.)
+
+## 3.Conventional training
+- Train the model using testing and validation data 
+    ```
+    device=0 sh train.sh
+    ```
+- Evaluate the model using testing data
+    ```
+    device=0 sh test.sh
+    ```
+
+## 5. Crop pathches (If you want to crop patches from WSIs in stead of using our datasets.)
 ### Set the dataset
 - set the WSIs and csv files like this.(patch images are abailable from the corresponding author on reasonable request.)
 - csv files are obtain by the annotation showed in our manuscript.
