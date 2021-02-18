@@ -1,4 +1,4 @@
-# [Pathological criteria based deeplearning for rare and difficult cases]
+# [New approach for pathological image classification with pathological criteria based deep learning]
 
 
 enviroment; keras 2.43, tensorflow 2.30. 
@@ -6,7 +6,7 @@ enviroment; keras 2.43, tensorflow 2.30.
 ## 1. Data preparation
 ### Set the dataset
 - Please git clone this repository and set the dataset like this.
-  (Dataset is abailable from the corresponding author on reasonable request.)
+  (Dataset is abailable from the corresponding author on reasonable request. [download link](https://www.nature.com/articles/s42256-019-0052-1#data-availability))
      
     - annotation/    <--------------- (set the csv files)
     - dataset/
@@ -37,17 +37,22 @@ enviroment; keras 2.43, tensorflow 2.30.
 In pre-training, six CNN models are trained. 
 
 Case of CNN1 training
+- move to the directory
+    ```
+    cd [the directory that you clone this repository]/pathological_criteria_based_DL
+    ```
 - Train the model using training and validation dataset
     ```
     pip install -U git+https://github.com/qubvel/efficientnet
     python test_cnn1.py
     ```
-- Evaluate the six model using validation dataset
+- Showing the prediction of the six models after the training them
     ```
-    device=0 sh test.sh
+    python test_pre_trained_models.py
     ```
+    
 ### Choose the best model
-- Set the downloaded model(h5) files  into ```model/```
+- Set the downloaded models(h5) files into ```model/```
 - If you use the model you train, set the model(h5) files into ```model/``` (The file must be named like this -- > ```model/cnn1.h5```)
 
 
