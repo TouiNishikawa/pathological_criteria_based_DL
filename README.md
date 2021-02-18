@@ -39,7 +39,8 @@ In pre-training, six CNN models are trained.
 Case of CNN1 training
 - Train the model using training and validation dataset
     ```
-    device=0 sh train.sh
+    pip install -U git+https://github.com/qubvel/efficientnet
+    python test_cnn1.py
     ```
 - Evaluate the six model using validation dataset
     ```
