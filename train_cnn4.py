@@ -84,7 +84,7 @@ y_train = np.array(y_train)
 
 
 for index, name in enumerate(folder):
-    dir = testing_path + name
+    dir = validation_path + name
     files = glob.glob(dir + "/*.png")
     for i, file in enumerate(files):
         image = Image.open(file)
@@ -93,7 +93,7 @@ for index, name in enumerate(folder):
         data = np.asarray(image)
         x_test.append(data)
         y_test.append(index)
-        print("testing_" + str(name) + ":　"+ str(i))
+        print("validation_" + str(name) + ":　"+ str(i))
 
 x_test = np.array(x_test)
 y_test = np.array(y_test)
