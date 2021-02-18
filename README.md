@@ -4,7 +4,7 @@
 ## 1. Data preparation
 ### Set the dataset
 - Please git clone this repository and set the dataset like this.
-- (Dataset is abailable from the corresponding author(smurata@wakayama-med.ac.jp) on reasonable request.)
+- Dataset is abailable from the corresponding author(smurata@wakayama-med.ac.jp) on reasonable request.
      
     - annotation/    <--------------- (set the csv files)
     - dataset/
@@ -34,7 +34,7 @@
 ### training
 In pre-training, six CNN models are trained. 
 
-Case of CNN1 training
+CNN1 training
 - move to the directory
     ```
     cd [the directory that you clone this repository]/pathological_criteria_based_DL
@@ -44,6 +44,7 @@ Case of CNN1 training
     pip install -U git+https://github.com/qubvel/efficientnet
     python test_cnn1.py
     ```
+- Repeat like this for CNN1 - CNN6
 
 ### Set the best model
 - Set the [downloaded models(h5) files](https://figshare.com/s/0a2a8c8e967786f735bd) into ```model/``` 
