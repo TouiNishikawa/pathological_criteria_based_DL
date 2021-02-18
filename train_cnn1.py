@@ -31,7 +31,6 @@ batch_size = 4
 
 #learning_num, data_set
 learnig_num = 1
-data_num = 6
 train_set_num = 1
 #******************************************************************************
 

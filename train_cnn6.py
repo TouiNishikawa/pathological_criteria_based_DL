@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""train_cnn2.py
+"""train_cnn4.py
 
 ## 1. Set up envroment
 """
@@ -22,7 +22,7 @@ from PIL import Image
 #******************************************************************************
 #class num、class name、image_size
 num_classes = 2
-folder = ["Preserve","Disturb"]
+folder = ["Oval","Round"]
 model_number = 4
 
 #epoch, batch_size
@@ -31,7 +31,7 @@ batch_size = 4
 
 #learning_num, data_set
 learnig_num = 1
-train_set_num = 2
+train_set_num = 6
 #******************************************************************************
 
 if model_number == 0:
@@ -174,7 +174,7 @@ model.summary()
 
 # ModelCheckpoint
 checkpoint = ModelCheckpoint(
-                    filepath="./model/cnn2/learning_" + str(learnig_num) + "_train_set_" + str(train_set_num) +  "_batch_" + str(batch_size) + "_{epoch:02d}.h5",
+                    filepath="./model/cnn6/learning_" + str(learnig_num) + "_train_set_" + str(train_set_num) +  "_batch_" + str(batch_size) + "_{epoch:02d}.h5",
                     monitor='val_loss',
                     save_best_only=False,
                     period=1,
