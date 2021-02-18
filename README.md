@@ -50,7 +50,9 @@ Case of CNN1 training
 - If you use the model you train, set the model(h5) files into ```model/``` (The file must be named like this -- > ```model/cnn1.h5```)
 
 ### testing
-- Showing the prediction of the six models after the training them    ```
+- Showing the prediction of the six models after the training them
+- change the first code "image_path = './dataset/pre_train/*******.pmg' "    
+    ```
     python test_pre_trained_models.py
     ```
 
