@@ -1,4 +1,4 @@
-# [New approach for pathological image classification with pathological criteria based deep learning]
+# [New approach for pathological image classification with pathological criteria based deep learning]()
 
 
 enviroment; keras 2.43, tensorflow 2.30. 
