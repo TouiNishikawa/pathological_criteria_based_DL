@@ -1,12 +1,11 @@
 # [New approach for pathological image classification with pathological criteria based deep learning]()
 
-
 enviroment; keras 2.43, tensorflow 2.30. 
 
 ## 1. Data preparation
 ### Set the dataset
 - Please git clone this repository and set the dataset like this.
-  (Dataset is abailable from the corresponding author on reasonable request. [download link](https://www.nature.com/articles/s42256-019-0052-1#data-availability))
+- (Dataset is abailable from the corresponding author on reasonable request. [download link](https://www.nature.com/articles/s42256-019-0052-1#data-availability))
      
     - annotation/    <--------------- (set the csv files)
     - dataset/
