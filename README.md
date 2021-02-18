@@ -4,7 +4,7 @@
 ## 1. Data preparation
 ### Set the dataset
 - Please git clone this repository and set the dataset like this.
-- (Dataset is abailable from the corresponding author on reasonable request. [download link](https://www.nature.com/articles/s42256-019-0052-1#data-availability))
+- (Dataset is abailable from the corresponding author(smurata@wakayama-med.ac.jp) on reasonable request.)
      
     - annotation/    <--------------- (set the csv files)
     - dataset/
@@ -27,7 +27,7 @@
                 - CIS (label 4)
             - validation/
             - testing/
-    - model/    <---------------（set the model(h5) files）
+    - model/    <--------------- set the model(h5) files
     - vs/    <---------------(set the WSI files)
 
 ## 2. Pre-train
