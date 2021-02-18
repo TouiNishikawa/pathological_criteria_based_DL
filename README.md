@@ -45,15 +45,15 @@ Case of CNN1 training
     pip install -U git+https://github.com/qubvel/efficientnet
     python test_cnn1.py
     ```
-- Showing the prediction of the six models after the training them
-    ```
-    python test_pre_trained_models.py
-    ```
-    
-### Choose the best model
-- Set the downloaded models(h5) files into ```model/```
+
+### Set the best model
+- Set the [downloaded models(h5) files](https://figshare.com/s/0a2a8c8e967786f735bd) into ```model/``` 
 - If you use the model you train, set the model(h5) files into ```model/``` (The file must be named like this -- > ```model/cnn1.h5```)
 
+### testing
+- Showing the prediction of the six models after the training them    ```
+    python test_pre_trained_models.py
+    ```
 
 ## 3.Main training
 - Train the model using testing and validation data 
