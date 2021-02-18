@@ -51,10 +51,18 @@ Case of CNN1 training
 
 ### testing
 - Showing the prediction of the six models after the training them
-- Please change the first code "image_path = './dataset/pre_train/validation/.png' "    
+
     ```
-    python test_pre_trained_models.py
+    python test_pre_trained_models.py [image_path]
     ```
+    for example
+    ```
+    python test_pre_trained_models.py './dataset/main_train/testing/Normal/N2_12_b_234.png'
+    python test_pre_trained_models.py './dataset/main_train/testing/Atypical/A_225_b_19.png'
+    python test_pre_trained_models.py './dataset/main_train/testing/Dysplasia/D_208_b_1.png'
+    python test_pre_trained_models.py './dataset/main_train/testing/CIS/C_223_b_0.png'
+    ```
+- You can also use the Notebook type file (test_pre_trained_models.py)  
 
 ## 3.Main training
 - Train the model using testing and validation data 
