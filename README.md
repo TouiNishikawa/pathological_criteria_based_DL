@@ -51,7 +51,7 @@ Case of CNN1 training
 
 ### testing
 - Showing the prediction of the six models after the training them
-- change the first code "image_path = './dataset/pre_train/validation/*******.png' "    
+- Please change the first code "image_path = './dataset/pre_train/validation/.png' "    
     ```
     python test_pre_trained_models.py
     ```
