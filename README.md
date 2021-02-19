@@ -1,5 +1,4 @@
-# [New approach for pathological image classification with pathological criteria based deep learning]()
-
+# [New approach for pathological image classification with pathological criteria based deep learning]() 
 
 ## 0. Data preparation
 ### Set the dataset
