@@ -50,7 +50,7 @@ CNN1 training
     ```
     python test_cnn1.py
     ```
-- Repeat like this for CNN1 - CNN6
+- Repeat the training like this for CNN1 - CNN6
 
 ### Set the best model
 - Set the [downloaded models(h5) files](https://figshare.com/s/0a2a8c8e967786f735bd) into ```model/``` 
