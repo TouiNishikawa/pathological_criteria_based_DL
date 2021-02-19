@@ -70,6 +70,10 @@ CNN1 training
     ```
     device=0 sh train.sh
     ```
+- ### Set the best model
+- Set the [downloaded models(h5) files](https://figshare.com/s/0a2a8c8e967786f735bd) into ```model/``` 
+- If you use the model you train, set the model(h5) files into ```model/``` (The file must be named like this -- > ```model/best_best_main_trained_model.h5```)
+
 - Evaluate the model using testing data
     ```
     device=0 sh test.sh
@@ -81,6 +85,10 @@ CNN1 training
     ```
     device=0 sh train.sh
     ```
+- ### Set the best model
+- Set the [downloaded models(h5) files](https://figshare.com/s/0a2a8c8e967786f735bd) into ```model/``` 
+- If you use the model you train, set the model(h5) files into ```model/``` (The file must be named like this -- > ```model/best_best_conventional_model.h5```)
+
 - Evaluate the model using testing data
     ```
     device=0 sh test.sh
