@@ -1,7 +1,7 @@
 # [New approach for pathological image classification with pathological criteria based deep learning]()
 
 
-## 1. Data preparation
+## 0. Data preparation
 ### Set the dataset
 - Please git clone this repository and set the dataset like this.
 - Dataset is abailable from the corresponding author(smurata@wakayama-med.ac.jp) on reasonable request.
@@ -30,6 +30,15 @@
     - model/    <--------------- set the model(h5) files
     - vs/    <---------------(set the WSI files)
 
+## 1. Enviroment
+- Train the model using training and validation dataset
+    ```
+    pip install -U git+https://github.com/qubvel/efficientnet
+    pip install keras_efficientnets
+    ```
+
+### training
+
 ## 2. Pre-train
 ### training
 In pre-training, six CNN models are trained. 
@@ -41,7 +50,6 @@ CNN1 training
     ```
 - Train the model using training and validation dataset
     ```
-    pip install -U git+https://github.com/qubvel/efficientnet
     python test_cnn1.py
     ```
 - Repeat like this for CNN1 - CNN6
