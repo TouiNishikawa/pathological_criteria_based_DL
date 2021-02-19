@@ -86,7 +86,7 @@ CNN1 training
     ```
 
 
-## 3.Conventional training
+## 4.Conventional training
 - ### Train the model using testing and validation data 
     ```
     device=0 sh train.sh
