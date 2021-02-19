@@ -31,6 +31,7 @@
     - vs/    <---------------(set the WSI files)
 
 ## 1. Enviroment
+- run this code
     ```
     pip install -U git+https://github.com/qubvel/efficientnet
     pip install keras_efficientnets
