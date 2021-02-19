@@ -74,30 +74,41 @@ CNN1 training
 ## 3.Main training
 - ### Train the model using testing and validation data 
     ```
-    device=0 sh train.sh
+    python train_main_training.py
     ```
 - ### Set the best model
 - Set the [downloaded models(h5) files](https://figshare.com/s/0a2a8c8e967786f735bd) into ```model/``` 
-- If you use the model you train, set the model(h5) files into ```model/``` (The file must be named like this -- > ```model/best_best_main_trained_model.h5```)
+- If you use the model you train, set the model(h5) files into ```model/``` (The file must be named like this -- > ```model/best_main_trained_model.h5```)
 
 - ### Evaluate the model using testing data
     ```
-    device=0 sh test.sh
+    python test_main_training.py
+    ```
+- ### Export the prediction of one patch image
+    ```
+    python test_main_training_patch.py [image_path]
+    ```
+    for example
+    ```
+    python test_main_training_patch.py './test_image/Normal/N2_12_b_234.png'
+    python test_main_training_patch.py './test_image/Atypical/A_228_b_17.png'
+    python test_main_training_patch.py './test_image/Dysplasia/D_211_b_1.png'
+    python test_main_training_patch.py './test_image/CIS/C_223_b_0.png'
     ```
 
 
 ## 4.Conventional training
 - ### Train the model using testing and validation data 
     ```
-    device=0 sh train.sh
+    python train_conventional.py
     ```
 - ### Set the best model
 - Set the [downloaded models(h5) files](https://figshare.com/s/0a2a8c8e967786f735bd) into ```model/``` 
-- If you use the model you train, set the model(h5) files into ```model/``` (The file must be named like this -- > ```model/best_best_conventional_model.h5```)
+- If you use the model you train, set the model(h5) files into ```model/``` (The file must be named like this -- > ```model/best_conventional_model.h5```)
 
 - ### Evaluate the model using testing data
     ```
-    device=0 sh test.sh
+    python test_conventional.py
     ```
 
 ## 5. Crop pathches (If you want to crop patches from WSIs in stead of using our datasets.)
