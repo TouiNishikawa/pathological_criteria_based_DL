@@ -31,7 +31,6 @@
     - vs/    <---------------(set the WSI files)
 
 ## 1. Enviroment
-- Train the model using training and validation dataset
     ```
     pip install -U git+https://github.com/qubvel/efficientnet
     pip install keras_efficientnets
