@@ -58,10 +58,10 @@ CNN1 training
     ```
     for example
     ```
-    python test_pre_trained_models.py './dataset/main_train/testing/Normal/N2_12_b_234.png'
-    python test_pre_trained_models.py './dataset/main_train/testing/Atypical/A_228_b_17.png'
-    python test_pre_trained_models.py './dataset/main_train/testing/Dysplasia/D_211_b_1.png'
-    python test_pre_trained_models.py './dataset/main_train/testing/CIS/C_223_b_0.png'
+    python test_pre_trained_models.py './test_image/Normal/N2_12_b_234.png'
+    python test_pre_trained_models.py './test_image/Atypical/A_228_b_17.png'
+    python test_pre_trained_models.py './test_image/Dysplasia/D_211_b_1.png'
+    python test_pre_trained_models.py './test_image/CIS/C_223_b_0.png'
     ```
 - You can also use the Notebook type file (test_pre_trained_models.py)  
 
