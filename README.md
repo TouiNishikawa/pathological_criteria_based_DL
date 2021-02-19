@@ -36,7 +36,6 @@
     pip install -U git+https://github.com/qubvel/efficientnet
     pip install keras_efficientnets
     ```
-### training
 
 ## 2. Pre-train
 ### training
