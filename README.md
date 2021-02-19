@@ -113,7 +113,7 @@ CNN1 training
 
 ## 5. Crop pathches (If you want to crop patches from WSIs in stead of using our datasets.)
 ### Set the dataset
-- set the WSIs and csv files like this.(patch images are abailable from the corresponding author on reasonable request.)
+- set the WSIs and csv files like this.(WSIs and csv files are abailable from the corresponding author on reasonable request.)
 - csv files are obtain by the annotation showed in our manuscript.
      
     - annotation/  <--------------- set the csv files
