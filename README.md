@@ -66,7 +66,7 @@ CNN1 training
 - You can also use the Notebook type file (test_pre_trained_models.py)  
 
 ## 3.Main training
-- Train the model using testing and validation data 
+- ### Train the model using testing and validation data 
     ```
     device=0 sh train.sh
     ```
@@ -74,14 +74,14 @@ CNN1 training
 - Set the [downloaded models(h5) files](https://figshare.com/s/0a2a8c8e967786f735bd) into ```model/``` 
 - If you use the model you train, set the model(h5) files into ```model/``` (The file must be named like this -- > ```model/best_best_main_trained_model.h5```)
 
-- Evaluate the model using testing data
+- ### Evaluate the model using testing data
     ```
     device=0 sh test.sh
     ```
 
 
 ## 3.Conventional training
-- Train the model using testing and validation data 
+- ### Train the model using testing and validation data 
     ```
     device=0 sh train.sh
     ```
@@ -89,7 +89,7 @@ CNN1 training
 - Set the [downloaded models(h5) files](https://figshare.com/s/0a2a8c8e967786f735bd) into ```model/``` 
 - If you use the model you train, set the model(h5) files into ```model/``` (The file must be named like this -- > ```model/best_best_conventional_model.h5```)
 
-- Evaluate the model using testing data
+- ### Evaluate the model using testing data
     ```
     device=0 sh test.sh
     ```
