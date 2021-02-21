@@ -11,8 +11,8 @@
         - pre_train/    <--------------- set the pre-training dataset
             - train_1/
                 - training
-                    - Low (label 1)
-                    - High (lavel 2)
+                    - 1 (= Low label)
+                    - 2 (= High lavel)
                 - validation
             - train_2/
             - train_3/
@@ -46,30 +46,47 @@ CNN1 training
     ```
     cd [the directory that you clone this repository]/pathological_criteria_based_DL
     ```
-- Train the model using training and validation dataset
+- Train the model using training dataset
+- Repeat the training for CNN1 - CNN6
     ```
-    python test_cnn1.py
+    python train_pre_training.py 1
+    python train_pre_training.py 2
+    python train_pre_training.py 3
+    python train_pre_training.py 4
+    python train_pre_training.py 5
+    python train_pre_training.py 6
     ```
-- Repeat the training like this for CNN1 - CNN6
 
 ### Set the best model
-- Set the [downloaded models(h5) files](https://figshare.com/s/0a2a8c8e967786f735bd) into ```model/``` 
-- If you use the model you train, set the model(h5) files into ```model/``` (The file must be named like this -- > ```model/best_model_cnn_1.h5```)
+- Set the [downloaded models(.h5) files](https://figshare.com/s/0a2a8c8e967786f735bd) into ```model/``` 
+- If you use the model you trained, set the model files into ```model/``` (The file must be named like this -- > ```model/best_model_cnn_1.h5```)
+
+### Evaluation
+- Evaluate the model using validation dataset
+- Repeat the evaluation for CNN1 - CNN6
+    ```
+    python test_pre_training.py 1
+    python test_pre_training.py 2
+    python test_pre_training.py 3
+    python test_pre_training.py 4
+    python test_pre_training.py 5
+    python test_pre_training.py 6
+    ```
 
 ### testing
 - Showing the prediction of the six models after the training them
 
     ```
-    python test_pre_trained_models.py [image_path]
+    python test_pre_training_integlation.py [image_path]
     ```
     for example
     ```
-    python test_pre_trained_models.py './test_image/Normal/N2_12_b_234.png'
-    python test_pre_trained_models.py './test_image/Atypical/A_228_b_17.png'
-    python test_pre_trained_models.py './test_image/Dysplasia/D_211_b_1.png'
-    python test_pre_trained_models.py './test_image/CIS/C_223_b_0.png'
+    python test_pre_training_integlation.py './test_image/Normal/N2_12_b_234.png'
+    python test_pre_training_integlation.py './test_image/Atypical/A_228_b_17.png'
+    python test_pre_training_integlation.py './test_image/Dysplasia/D_211_b_1.png'
+    python test_pre_training_integlation.py './test_image/CIS/C_223_b_0.png'
     ```
-- You can also use the Notebook type file (test_pre_trained_models.py)  
+- You can also use the Notebook type file (test_pre_training_integlation.ipynb)  
 
 ## 3.Main training
 - ### Train the model using testing and validation data 
@@ -78,7 +95,7 @@ CNN1 training
     ```
 - ### Set the best model
 - I created these codes on google colabolatory but used local runtime. The spech of google colabolatory is not insufficient. So please use more higher spech comuputer, if these codes show error.
-- Set the [downloaded models(h5) files](https://figshare.com/s/0a2a8c8e967786f735bd) into ```model/``` 
+- Set the [downloaded models(.h5) files](https://figshare.com/s/0a2a8c8e967786f735bd) into ```model/``` 
 - If you use the model you train, set the model(h5) files into ```model/``` (The file must be named like this -- > ```model/best_main_trained_model.h5```)
 
 - ### Evaluate the model using testing data
