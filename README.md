@@ -73,7 +73,7 @@ CNN1 training
     python test_pre_training.py 6
     ```
 
-### testing
+### Show the results
 - Showing the prediction of the six models after the training them
 
     ```
