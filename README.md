@@ -21,10 +21,10 @@
             - train_6/
         - main_train/    <--------------- set the main training dataset
             - training/
-                - Normal (label 1)
-                - Atypical (label 2)
-                - Dysplasia (label 3)
-                - CIS (label 4)
+                - Normal (= label 1)
+                - Atypical (= label 2)
+                - Dysplasia (= label 3)
+                - CIS (= label 4)
             - validation/
             - testing/
     - model/    <--------------- set the model(h5) files
