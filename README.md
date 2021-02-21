@@ -1,5 +1,6 @@
 # [New approach for pathological image classification with pathological criteria based deep learning]() 
 
+
 ## 0. Data preparation
 ### Set the dataset
 - Please git clone this repository and set the dataset like this.
@@ -76,6 +77,7 @@ CNN1 training
     python train_main_training.py
     ```
 - ### Set the best model
+- I created these codes on google colabolatory but used local runtime. The spech of google colabolatory is not insufficient. So please use more higher spech comuputer, if these codes show error.
 - Set the [downloaded models(h5) files](https://figshare.com/s/0a2a8c8e967786f735bd) into ```model/``` 
 - If you use the model you train, set the model(h5) files into ```model/``` (The file must be named like this -- > ```model/best_main_trained_model.h5```)
 
