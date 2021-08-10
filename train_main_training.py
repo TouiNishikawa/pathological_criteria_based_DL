@@ -215,7 +215,7 @@ x = Activation(swish_act)(x)
 predictions = Dense(num_classes, activation="softmax")(x)
 
 model = Model(inputs = [model_1.input, model_2.input,model_3.input,model_4.input,model_5.input,model_6.input], outputs = predictions)
-model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['acc'])
+model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['acc'])
 model.summary()
 
 print("training...")
